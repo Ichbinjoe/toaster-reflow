@@ -1,0 +1,52 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# 1-1415899-3
+#
+DEF 1-1415899-3 K 0 40 Y N 1 L N
+F0 "K" -311 321 50 H V L BNN
+F1 "1-1415899-3" -310 -401 50 H V L BNN
+F2 "RELAY_1-1415899-3" 0 0 50 H I L BNN
+F3 "TE Connectivity" 0 0 50 H I L BNN
+F4 "Electromechanical Relay 5VDC 60Ohm 16A SPST-NO _29x12.7x15.7_mm THT Power Relay" 0 0 50 H I L BNN
+F5 "http://www.te.com/usa-en/product-1-1415899-3.html" 0 0 50 H I L BNN
+F6 "1-1415899-3" 0 0 50 H I L BNN
+F7 "None" 0 0 50 H I L BNN
+F8 "" 0 0 50 H I L BNN
+F9 "" 0 0 50 H I L BNN
+F10 "Compliant" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 300 -100 100 -100 N
+P 2 0 0 10 100 -100 100 -50 N
+P 2 0 0 10 300 100 200 100 N
+P 2 0 0 10 200 100 75 150 N
+P 2 0 0 10 -300 200 -100 200 N
+P 2 0 0 10 -100 200 -100 50 N
+P 2 0 0 10 -100 50 0 50 N
+P 2 0 0 10 -100 50 -200 50 N
+P 2 0 0 10 -200 50 -200 -50 N
+P 2 0 0 10 -200 -50 -100 -50 N
+P 2 0 0 10 0 -50 0 50 N
+P 2 0 0 10 0 -50 -100 -50 N
+P 2 0 0 10 -100 -50 -100 -200 N
+P 2 0 0 10 -100 -200 -300 -200 N
+P 2 0 0 10 300 300 300 100 N
+P 2 0 0 10 300 100 300 -100 N
+P 2 0 0 10 300 -100 300 -300 N
+P 2 0 0 10 300 -300 -300 -300 N
+P 2 0 0 10 -300 -300 -300 -200 N
+P 2 0 0 10 -300 -200 -300 200 N
+P 2 0 0 10 -300 200 -300 300 N
+P 2 0 0 10 -300 300 300 300 N
+X A1 A2 -500 200 200 R 40 40 0 0 P 
+X A2 A1 -500 -200 200 R 40 40 0 0 P 
+X 11 11_1 500 100 200 L 40 40 0 0 P 
+X 11 11_2 500 100 200 L 40 40 0 0 P 
+X 14 14_1 500 -100 200 L 40 40 0 0 P 
+X 14 14_2 500 -100 200 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library
