@@ -7,3 +7,6 @@
 [submodule "kicad-packages3D"]
 	path = kicad-packages3D
 	url = https://github.com/KiCad/kicad-packages3D.git
+[submodule "KiCad_BOM_Wizard"]
+	path = KiCad_BOM_Wizard
+	url = https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git
