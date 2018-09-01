@@ -290,7 +290,7 @@ U 1 1 5B8E66D9
 P 8200 2300
 F 0 "J6" H 8280 2342 50  0000 L CNN
 F 1 "Conn_01x03" H 8280 2251 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8200 2300 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8200 2300 50  0001 C CNN
 F 3 "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf" H 8200 2300 50  0001 C CNN
 F 4 "732-5316-ND" H 8200 2300 50  0001 C CNN "DigikeyPartNumber"
 	1    8200 2300
