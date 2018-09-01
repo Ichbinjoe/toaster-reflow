@@ -22,7 +22,7 @@ AR Path="/5B8B5D8B" Ref="U?"  Part="1"
 AR Path="/5B8AB544/5B8B5D8B" Ref="U2"  Part="1" 
 AR Path="/5B8ADEE2/5B8B5D8B" Ref="U?"  Part="1" 
 AR Path="/5B8DE3E9/5B8B5D8B" Ref="U3"  Part="1" 
-F 0 "U2" H 5800 4728 50  0000 C CNN
+F 0 "U3" H 5800 4728 50  0000 C CNN
 F 1 "MAX31856" H 5800 4637 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5950 3400 50  0001 L CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX31856.pdf" H 5750 4150 50  0001 C CNN
@@ -38,9 +38,9 @@ AR Path="/5B8B8EAA" Ref="C?"  Part="1"
 AR Path="/5B8AB544/5B8B8EAA" Ref="C5"  Part="1" 
 AR Path="/5B8ADEE2/5B8B8EAA" Ref="C?"  Part="1" 
 AR Path="/5B8DE3E9/5B8B8EAA" Ref="C10"  Part="1" 
-F 0 "C5" H 5515 3296 50  0000 L CNN
+F 0 "C10" H 5515 3296 50  0000 L CNN
 F 1 "0.1uF" H 5515 3205 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 5438 3100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5438 3100 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10F104ZO8NNNC.jsp" H 5400 3250 50  0001 C CNN
 F 4 "1276-1258-1-ND" H 5400 3250 50  0001 C CNN "DigikeyPartNumber"
 	1    5400 3250
@@ -54,9 +54,9 @@ AR Path="/5B8B8EBE" Ref="C?"  Part="1"
 AR Path="/5B8AB544/5B8B8EBE" Ref="C3"  Part="1" 
 AR Path="/5B8ADEE2/5B8B8EBE" Ref="C?"  Part="1" 
 AR Path="/5B8DE3E9/5B8B8EBE" Ref="C8"  Part="1" 
-F 0 "C3" H 4815 4046 50  0000 L CNN
+F 0 "C8" H 4815 4046 50  0000 L CNN
 F 1 "0.1uF" H 4815 3955 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4738 3850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4738 3850 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10F104ZO8NNNC.jsp" H 4700 4000 50  0001 C CNN
 F 4 "1276-1258-1-ND" H 4700 4000 50  0001 C CNN "DigikeyPartNumber"
 	1    4700 4000
@@ -70,7 +70,7 @@ AR Path="/5B8B9109" Ref="J?"  Part="1"
 AR Path="/5B8AB544/5B8B9109" Ref="J4"  Part="1" 
 AR Path="/5B8ADEE2/5B8B9109" Ref="J?"  Part="1" 
 AR Path="/5B8DE3E9/5B8B9109" Ref="J5"  Part="1" 
-F 0 "J4" H 4230 3996 50  0000 L CNN
+F 0 "J5" H 4230 3996 50  0000 L CNN
 F 1 "1935161" H 4230 3905 50  0000 L CNN
 F 2 "1935161:PHOENIX_1935161" H 4100 3950 50  0001 L BNN
 F 3 "Phoenix Contact" H 4100 3950 50  0001 L BNN
@@ -149,9 +149,9 @@ AR Path="/5B8C85E4" Ref="C?"  Part="1"
 AR Path="/5B8AB544/5B8C85E4" Ref="C6"  Part="1" 
 AR Path="/5B8ADEE2/5B8C85E4" Ref="C?"  Part="1" 
 AR Path="/5B8DE3E9/5B8C85E4" Ref="C11"  Part="1" 
-F 0 "C6" H 6315 3296 50  0000 L CNN
+F 0 "C11" H 6315 3296 50  0000 L CNN
 F 1 "0.1uF" H 6315 3205 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6238 3100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6238 3100 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10F104ZO8NNNC.jsp" H 6200 3250 50  0001 C CNN
 F 4 "1276-1258-1-ND" H 6200 3250 50  0001 C CNN "DigikeyPartNumber"
 	1    6200 3250
@@ -224,9 +224,9 @@ P 4700 4300
 AR Path="/5B8AB544/5B8C908D" Ref="C4"  Part="1" 
 AR Path="/5B8ADEE2/5B8C908D" Ref="C?"  Part="1" 
 AR Path="/5B8DE3E9/5B8C908D" Ref="C9"  Part="1" 
-F 0 "C4" H 4815 4346 50  0000 L CNN
+F 0 "C9" H 4815 4346 50  0000 L CNN
 F 1 "0.01uF" H 4815 4255 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4738 4150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4738 4150 50  0001 C CNN
 F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 4700 4300 50  0001 C CNN
 F 4 "478-1227-1-ND" H 4700 4300 50  0001 C CNN "DigikeyPartNumber"
 	1    4700 4300
@@ -253,9 +253,9 @@ P 4700 3700
 AR Path="/5B8AB544/5B8C91FE" Ref="C2"  Part="1" 
 AR Path="/5B8ADEE2/5B8C91FE" Ref="C?"  Part="1" 
 AR Path="/5B8DE3E9/5B8C91FE" Ref="C7"  Part="1" 
-F 0 "C2" H 4815 3746 50  0000 L CNN
+F 0 "C7" H 4815 3746 50  0000 L CNN
 F 1 "0.01uF" H 4815 3655 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4738 3550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4738 3550 50  0001 C CNN
 F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 4700 3700 50  0001 C CNN
 F 4 "478-1227-1-ND" H 4700 3700 50  0001 C CNN "DigikeyPartNumber"
 	1    4700 3700
@@ -283,9 +283,9 @@ AR Path="/5B8C9DFB" Ref="Q?"  Part="1"
 AR Path="/5B8AB544/5B8C9DFB" Ref="Q4"  Part="1" 
 AR Path="/5B8ADEE2/5B8C9DFB" Ref="Q?"  Part="1" 
 AR Path="/5B8DE3E9/5B8C9DFB" Ref="Q5"  Part="1" 
-F 0 "Q4" H 7306 3796 50  0000 L CNN
+F 0 "Q5" H 7306 3796 50  0000 L CNN
 F 1 "Q_PMOS_GSD" H 7306 3705 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 7300 3850 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7300 3850 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/NTR5105P-D.PDF" H 7100 3750 50  0001 C CNN
 F 4 "NTR5105PT1GOSCT-ND" H 7100 3750 50  0001 C CNN "DigikeyPartNumber"
 	1    7100 3750
@@ -313,9 +313,9 @@ AR Path="/5B8CA624" Ref="D?"  Part="1"
 AR Path="/5B8AB544/5B8CA624" Ref="D4"  Part="1" 
 AR Path="/5B8ADEE2/5B8CA624" Ref="D?"  Part="1" 
 AR Path="/5B8DE3E9/5B8CA624" Ref="D5"  Part="1" 
-F 0 "D4" H 7492 3895 50  0000 C CNN
+F 0 "D5" H 7492 3895 50  0000 C CNN
 F 1 "RED" H 7492 3986 50  0000 C CNN
-F 2 "Diodes_SMD:D_0603" H 7500 4150 50  0001 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 7500 4150 50  0001 C CNN
 F 3 "https://katalog.we-online.de/led/datasheet/150060RS75000.pdf" H 7500 4150 50  0001 C CNN
 F 4 "732-4978-1-ND" H 7500 4150 50  0001 C CNN "DigikeyPartNumber"
 	1    7500 4150
@@ -329,9 +329,9 @@ AR Path="/5B8CA62C" Ref="R?"  Part="1"
 AR Path="/5B8AB544/5B8CA62C" Ref="R7"  Part="1" 
 AR Path="/5B8ADEE2/5B8CA62C" Ref="R?"  Part="1" 
 AR Path="/5B8DE3E9/5B8CA62C" Ref="R8"  Part="1" 
-F 0 "R7" V 8057 4150 50  0000 C CNN
+F 0 "R8" V 8057 4150 50  0000 C CNN
 F 1 "470" V 7966 4150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 7780 4150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7780 4150 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 7850 4150 50  0001 C CNN
 F 4 "P470HCT-ND" H 7850 4150 50  0001 C CNN "DigikeyPartNumber"
 	1    7850 4150

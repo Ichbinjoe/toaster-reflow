@@ -2,3 +2,5 @@
 *.csv
 *.html
 *.xml
+*.net
+*.kicad_pcb-bak
