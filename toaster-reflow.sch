@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -14,18 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector:Raspberry_Pi_2_3 J3
-U 1 1 5B887FC3
-P 5500 4100
-F 0 "J3" H 5500 5578 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 5500 5487 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x20_Pitch2.54mm" H 5500 4100 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 5500 4100 50  0001 C CNN
-F 4 "S9200-ND" H 5500 4100 50  0001 C CNN "DigikeyPartNumber"
-	1    5500 4100
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR011
 U 1 1 5B8880BA
@@ -117,71 +105,12 @@ Connection ~ 5700 5500
 Wire Wire Line
 	5700 5500 5800 5500
 $Comp
-L Sensor_Temperature:MAX31855KASA U1
-U 1 1 5B88C06A
-P 8650 3550
-F 0 "U1" H 8650 2972 50  0000 C CNN
-F 1 "MAX31855KASA" H 8650 3063 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9650 3200 50  0001 C CIN
-F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 8650 3550 50  0001 C CNN
-F 4 "MAX31855KASA+-ND" H 8650 3550 50  0001 C CNN "DigikeyPartNumber"
-	1    8650 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR019
-U 1 1 5B88F2CD
-P 8550 3950
-F 0 "#PWR019" H 8550 3700 50  0001 C CNN
-F 1 "GND" V 8555 3822 50  0000 R CNN
-F 2 "" H 8550 3950 50  0001 C CNN
-F 3 "" H 8550 3950 50  0001 C CNN
-	1    8550 3950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8650 3950 8550 3950
-$Comp
-L power:+3V3 #PWR021
-U 1 1 5B88F5EA
-P 8650 3050
-F 0 "#PWR021" H 8650 2900 50  0001 C CNN
-F 1 "+3V3" H 8665 3223 50  0000 C CNN
-F 2 "" H 8650 3050 50  0001 C CNN
-F 3 "" H 8650 3050 50  0001 C CNN
-	1    8650 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8650 3150 8650 3050
-$Comp
-L 1935161:1935161 J4
-U 1 1 5B89023C
-P 7850 3550
-F 0 "J4" H 7980 3596 50  0000 L CNN
-F 1 "1935161" H 7980 3505 50  0000 L CNN
-F 2 "PHOENIX_1935161" H 7850 3550 50  0001 L BNN
-F 3 "Phoenix Contact" H 7850 3550 50  0001 L BNN
-F 4 "None" H 7850 3550 50  0001 L BNN "Field4"
-F 5 "Conn Terminal Blocks 2 POS 5mm Solder ST Thru-Hole 16A" H 7850 3550 50  0001 L BNN "Field5"
-F 6 "None" H 7850 3550 50  0001 L BNN "Field6"
-F 7 "1935161" H 7850 3550 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 7850 3550 50  0001 L BNN "Field8"
-F 9 "277-1667-ND" H 7850 3550 50  0001 C CNN "DigikeyPartNumber"
-	1    7850 3550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8250 3650 8150 3650
-Wire Wire Line
-	8250 3450 8150 3450
-$Comp
 L 1-1415899-3:1-1415899-3 K1
 U 1 1 5B891919
 P 2150 5750
 F 0 "K1" H 2150 5283 50  0000 C CNN
 F 1 "1-1415899-3" H 2150 5374 50  0000 C CNN
-F 2 "RELAY_1-1415899-3" H 2150 5750 50  0001 L BNN
+F 2 "1-1415899-3:RELAY_1-1415899-3" H 2150 5750 50  0001 L BNN
 F 3 "TE Connectivity" H 2150 5750 50  0001 L BNN
 F 4 "Electromechanical Relay 5VDC 60Ohm 16A SPST-NO _29x12.7x15.7_mm THT Power Relay" H 2150 5750 50  0001 L BNN "Field4"
 F 5 "http://www.te.com/usa-en/product-1-1415899-3.html" H 2150 5750 50  0001 L BNN "Field5"
@@ -209,8 +138,6 @@ Wire Wire Line
 	1550 5650 1650 5650
 Wire Wire Line
 	1550 5850 1650 5850
-Text Notes 8100 3950 2    50   ~ 0
-Thermocouple 1
 $Comp
 L Device:LED D3
 U 1 1 5B89923C
@@ -299,67 +226,6 @@ Text Notes 3600 5900 2    50   ~ 0
 Heating indicator
 Text Notes 1100 5450 0    50   ~ 0
 Toaster oven relay
-$Comp
-L Sensor_Temperature:MAX31855KASA U2
-U 1 1 5B8A3905
-P 8650 4900
-F 0 "U2" H 8650 4322 50  0000 C CNN
-F 1 "MAX31855KASA" H 8650 4413 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9650 4550 50  0001 C CIN
-F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 8650 4900 50  0001 C CNN
-F 4 "MAX31855KASA+-ND" H 8650 4900 50  0001 C CNN "DigikeyPartNumber"
-	1    8650 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR020
-U 1 1 5B8A390C
-P 8550 5300
-F 0 "#PWR020" H 8550 5050 50  0001 C CNN
-F 1 "GND" V 8555 5172 50  0000 R CNN
-F 2 "" H 8550 5300 50  0001 C CNN
-F 3 "" H 8550 5300 50  0001 C CNN
-	1    8550 5300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8650 5300 8550 5300
-$Comp
-L power:+3V3 #PWR022
-U 1 1 5B8A3913
-P 8650 4400
-F 0 "#PWR022" H 8650 4250 50  0001 C CNN
-F 1 "+3V3" H 8665 4573 50  0000 C CNN
-F 2 "" H 8650 4400 50  0001 C CNN
-F 3 "" H 8650 4400 50  0001 C CNN
-	1    8650 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8650 4500 8650 4400
-$Comp
-L 1935161:1935161 J5
-U 1 1 5B8A391F
-P 7850 4900
-F 0 "J5" H 7980 4946 50  0000 L CNN
-F 1 "1935161" H 7980 4855 50  0000 L CNN
-F 2 "PHOENIX_1935161" H 7850 4900 50  0001 L BNN
-F 3 "Phoenix Contact" H 7850 4900 50  0001 L BNN
-F 4 "None" H 7850 4900 50  0001 L BNN "Field4"
-F 5 "Conn Terminal Blocks 2 POS 5mm Solder ST Thru-Hole 16A" H 7850 4900 50  0001 L BNN "Field5"
-F 6 "None" H 7850 4900 50  0001 L BNN "Field6"
-F 7 "1935161" H 7850 4900 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 7850 4900 50  0001 L BNN "Field8"
-F 9 "277-1667-ND" H 7850 4900 50  0001 C CNN "DigikeyPartNumber"
-	1    7850 4900
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8250 5000 8150 5000
-Wire Wire Line
-	8250 4800 8150 4800
-Text Notes 8100 5300 2    50   ~ 0
-Thermocouple 2
 Wire Wire Line
 	3350 2350 3500 2350
 $Comp
@@ -368,7 +234,7 @@ U 1 1 5B8AC1A4
 P 1250 5750
 F 0 "J1" H 1145 5383 50  0000 C CNN
 F 1 "1935161" H 1145 5474 50  0000 C CNN
-F 2 "PHOENIX_1935161" H 1250 5750 50  0001 L BNN
+F 2 "1935161:PHOENIX_1935161" H 1250 5750 50  0001 L BNN
 F 3 "Phoenix Contact" H 1250 5750 50  0001 L BNN
 F 4 "277-1667-ND" H 1250 5750 50  0001 C CNN "DigikeyPartNumber"
 F 5 "None" H 1250 5750 50  0001 L BNN "Field4"
@@ -398,36 +264,6 @@ F 3 "" H 3500 5500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3500 5550 3500 5500
-Text Label 9650 3650 0    50   ~ 0
-THERMO1_CS
-Text Label 9650 5000 0    50   ~ 0
-THERMO2_CS
-Text Label 9650 3350 0    50   ~ 0
-THERMO_SCK
-Text Label 9650 3450 0    50   ~ 0
-THERMO_MISO
-Wire Wire Line
-	9050 5000 9650 5000
-Wire Wire Line
-	9050 3350 9100 3350
-Wire Wire Line
-	9050 3650 9650 3650
-Wire Wire Line
-	9100 3350 9100 4700
-Wire Wire Line
-	9100 4700 9050 4700
-Connection ~ 9100 3350
-Wire Wire Line
-	9100 3350 9650 3350
-Wire Wire Line
-	9050 3450 9200 3450
-Wire Wire Line
-	9200 4800 9200 3450
-Wire Wire Line
-	9050 4800 9200 4800
-Connection ~ 9200 3450
-Wire Wire Line
-	9200 3450 9650 3450
 Text Label 6350 4300 0    50   ~ 0
 THERMO1_CS
 Text Label 6350 4200 0    50   ~ 0
@@ -560,8 +396,9 @@ U 1 1 5B917875
 P 5500 6600
 F 0 "Q2" H 5706 6646 50  0000 L CNN
 F 1 "Q_PMOS_GSD" H 5706 6555 50  0000 L CNN
-F 2 "" H 5700 6700 50  0001 C CNN
-F 3 "~" H 5500 6600 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5700 6700 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/NTR5105P-D.PDF" H 5500 6600 50  0001 C CNN
+F 4 "NTR5105PT1GOSCT-ND" H 5500 6600 50  0001 C CNN "DigikeyPartNumber"
 	1    5500 6600
 	1    0    0    -1  
 $EndComp
@@ -606,17 +443,6 @@ $EndComp
 Wire Wire Line
 	7300 2200 8000 2200
 $Comp
-L Device:Q_PMOS_GSD Q1
-U 1 1 5B939457
-P 2550 5050
-F 0 "Q1" H 2756 5096 50  0000 L CNN
-F 1 "Q_PMOS_GSD" H 2756 5005 50  0000 L CNN
-F 2 "" H 2750 5150 50  0001 C CNN
-F 3 "~" H 2550 5050 50  0001 C CNN
-	1    2550 5050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR01
 U 1 1 5B93CF55
 P 2300 4650
@@ -653,7 +479,6 @@ HEAT_ENABLE
 Wire Wire Line
 	1750 5050 2300 5050
 Connection ~ 2300 5050
-NoConn ~ 6300 4500
 NoConn ~ 6300 4000
 NoConn ~ 6300 3900
 NoConn ~ 6300 3800
@@ -667,10 +492,6 @@ NoConn ~ 4700 3600
 NoConn ~ 4700 3900
 NoConn ~ 4700 4000
 NoConn ~ 4700 4100
-NoConn ~ 4700 4300
-NoConn ~ 4700 4400
-NoConn ~ 4700 4500
-NoConn ~ 4700 4600
 NoConn ~ 4700 4700
 NoConn ~ 4700 4800
 $Comp
@@ -679,8 +500,9 @@ U 1 1 5B999BCC
 P 6350 7100
 F 0 "LS1" H 6520 7096 50  0000 L CNN
 F 1 "Speaker" H 6520 7005 50  0000 L CNN
-F 2 "" H 6350 6900 50  0001 C CNN
-F 3 "~" H 6340 7050 50  0001 C CNN
+F 2 "PS12:PS12" H 6350 6900 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/piezoelectronic_buzzer_ps_en.pdf" H 6340 7050 50  0001 C CNN
+F 4 "445-2525-1-ND" H 6350 7100 50  0001 C CNN "DigikeyPartNumber"
 	1    6350 7100
 	1    0    0    -1  
 $EndComp
@@ -745,17 +567,6 @@ Wire Wire Line
 Connection ~ 5600 7250
 Wire Wire Line
 	5600 7250 5600 7300
-$Comp
-L Device:Q_PMOS_GSD Q3
-U 1 1 5B9CED86
-P 7200 1900
-F 0 "Q3" H 7406 1946 50  0000 L CNN
-F 1 "Q_PMOS_GSD" H 7406 1855 50  0000 L CNN
-F 2 "" H 7400 2000 50  0001 C CNN
-F 3 "~" H 7200 1900 50  0001 C CNN
-	1    7200 1900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7300 1650 7300 1700
 Wire Wire Line
@@ -809,7 +620,7 @@ U 1 1 5B89EEA8
 P 2450 2700
 F 0 "J2" H 2580 2746 50  0000 L CNN
 F 1 "1935161" H 2580 2655 50  0000 L CNN
-F 2 "PHOENIX_1935161" H 2450 2700 50  0001 L BNN
+F 2 "1935161:PHOENIX_1935161" H 2450 2700 50  0001 L BNN
 F 3 "Phoenix Contact" H 2450 2700 50  0001 L BNN
 F 4 "None" H 2450 2700 50  0001 L BNN "Field4"
 F 5 "Conn Terminal Blocks 2 POS 5mm Solder ST Thru-Hole 16A" H 2450 2700 50  0001 L BNN "Field5"
@@ -820,4 +631,232 @@ F 9 "277-1667-ND" H 2450 2700 50  0001 C CNN "DigikeyPartNumber"
 	1    2450 2700
 	-1   0    0    1   
 $EndComp
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 5B8A2F42
+P 2550 5050
+F 0 "Q1" H 2756 5096 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 2756 5005 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 2750 5150 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/NTR5105P-D.PDF" H 2550 5050 50  0001 C CNN
+F 4 "NTR5105PT1GOSCT-ND" H 2550 5050 50  0001 C CNN "DigikeyPartNumber"
+	1    2550 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q3
+U 1 1 5B8A58B4
+P 7200 1900
+F 0 "Q3" H 7406 1946 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 7406 1855 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 7400 2000 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/NTR5105P-D.PDF" H 7200 1900 50  0001 C CNN
+F 4 "NTR5105PT1GOSCT-ND" H 7200 1900 50  0001 C CNN "DigikeyPartNumber"
+	1    7200 1900
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 7300 3100 500  600 
+U 5B8AB544
+F0 "Thermocouple1" 50
+F1 "thermocouple.sch" 50
+F2 "DRDY" I R 7800 3150 50 
+F3 "FAULT" I R 7800 3250 50 
+F4 "CS" I R 7800 3350 50 
+F5 "SCK" I R 7800 3450 50 
+F6 "MISO" I R 7800 3550 50 
+F7 "MOSI" I R 7800 3650 50 
+$EndSheet
+$Comp
+L Reference_Voltage:ISL21070CIH320Z-TK U1
+U 1 1 5B8BDCD1
+P 8100 5650
+F 0 "U1" H 7870 5696 50  0000 R CNN
+F 1 "3.3V Ref" H 7870 5605 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 8600 5400 50  0001 C CIN
+F 3 "http://www.onsemi.com/pub/Collateral/NCP51460-D.PDF" H 8100 5650 50  0001 C CIN
+F 4 "NCP51460SN33T1GOSCT-ND" H 8100 5650 50  0001 C CNN "DigikeyPartNumber"
+	1    8100 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VADC #PWR0101
+U 1 1 5B8BFBE2
+P 8500 5600
+F 0 "#PWR0101" H 8650 5550 50  0001 C CNN
+F 1 "+3.3VADC" H 8520 5743 50  0000 C CNN
+F 2 "" H 8500 5600 50  0001 C CNN
+F 3 "" H 8500 5600 50  0001 C CNN
+	1    8500 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5650 8500 5650
+Wire Wire Line
+	8500 5650 8500 5600
+$Comp
+L power:GND #PWR0102
+U 1 1 5B8C1833
+P 8000 5950
+F 0 "#PWR0102" H 8000 5700 50  0001 C CNN
+F 1 "GND" H 8005 5777 50  0000 C CNN
+F 2 "" H 8000 5950 50  0001 C CNN
+F 3 "" H 8000 5950 50  0001 C CNN
+	1    8000 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5B8C18CD
+P 8000 5250
+F 0 "#PWR0103" H 8000 5100 50  0001 C CNN
+F 1 "+5V" H 8015 5423 50  0000 C CNN
+F 2 "" H 8000 5250 50  0001 C CNN
+F 3 "" H 8000 5250 50  0001 C CNN
+	1    8000 5250
+	1    0    0    -1  
+$EndComp
+Text Notes 8150 6000 0    50   ~ 0
+Reference voltage for thermocouple circuits
+$Comp
+L Connector:Raspberry_Pi_2_3 J3
+U 1 1 5B887FC3
+P 5500 4100
+F 0 "J3" H 5500 5578 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 5500 5487 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x20_Pitch2.54mm" H 5500 4100 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 5500 4100 50  0001 C CNN
+F 4 "S9200-ND" H 5500 4100 50  0001 C CNN "DigikeyPartNumber"
+	1    5500 4100
+	1    0    0    -1  
+$EndComp
+Text Label 6350 4500 0    50   ~ 0
+THERMO_MOSI
+Wire Wire Line
+	6300 4500 6350 4500
+$Comp
+L Device:C C1
+U 1 1 5B8D0482
+P 7800 5300
+AR Path="/5B8D0482" Ref="C1"  Part="1" 
+AR Path="/5B8AB544/5B8D0482" Ref="C?"  Part="1" 
+F 0 "C1" H 7915 5346 50  0000 L CNN
+F 1 "0.1uF" H 7915 5255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7838 5150 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10F104ZO8NNNC.jsp" H 7800 5300 50  0001 C CNN
+F 4 "1276-1258-1-ND" H 7800 5300 50  0001 C CNN "DigikeyPartNumber"
+	1    7800 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8000 5250 8000 5300
+Wire Wire Line
+	8000 5300 7950 5300
+Wire Wire Line
+	8000 5300 8000 5350
+Connection ~ 8000 5300
+$Comp
+L power:GND #PWR0104
+U 1 1 5B8D5B7D
+P 7600 5300
+F 0 "#PWR0104" H 7600 5050 50  0001 C CNN
+F 1 "GND" H 7605 5127 50  0000 C CNN
+F 2 "" H 7600 5300 50  0001 C CNN
+F 3 "" H 7600 5300 50  0001 C CNN
+	1    7600 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5300 7650 5300
+$Sheet
+S 7300 3850 500  600 
+U 5B8DE3E9
+F0 "Thermocouple2" 50
+F1 "thermocouple.sch" 50
+F2 "DRDY" I R 7800 3900 50 
+F3 "FAULT" I R 7800 4000 50 
+F4 "CS" I R 7800 4100 50 
+F5 "SCK" I R 7800 4200 50 
+F6 "MISO" I R 7800 4300 50 
+F7 "MOSI" I R 7800 4400 50 
+$EndSheet
+Wire Wire Line
+	7800 4400 8400 4400
+Wire Wire Line
+	8400 4400 8400 3750
+Wire Wire Line
+	8400 3650 7800 3650
+Wire Wire Line
+	7800 4300 8450 4300
+Wire Wire Line
+	8450 4300 8450 3650
+Wire Wire Line
+	8450 3550 7800 3550
+Wire Wire Line
+	7800 4200 8500 4200
+Wire Wire Line
+	8500 4200 8500 3550
+Wire Wire Line
+	8500 3450 7800 3450
+Text Label 8600 4100 0    50   ~ 0
+THERMO2_CS
+Text Label 8600 3350 0    50   ~ 0
+THERMO1_CS
+Text Label 8600 3150 0    50   ~ 0
+THERMO1_DRDY
+Text Label 8600 3250 0    50   ~ 0
+THERMO1_FAULT
+Text Label 8600 3900 0    50   ~ 0
+THERMO2_DRDY
+Wire Wire Line
+	7800 3350 8600 3350
+Wire Wire Line
+	7800 3250 8600 3250
+Wire Wire Line
+	7800 3150 8600 3150
+Wire Wire Line
+	7800 4100 8600 4100
+Text Label 8600 4000 0    50   ~ 0
+THERMO2_FAULT
+Wire Wire Line
+	7800 3900 8600 3900
+Wire Wire Line
+	7800 4000 8600 4000
+Text Label 8600 3550 0    50   ~ 0
+THERMO_SCK
+Wire Wire Line
+	8500 3550 8600 3550
+Connection ~ 8500 3550
+Wire Wire Line
+	8500 3550 8500 3450
+Text Label 8600 3650 0    50   ~ 0
+THERMO_MISO
+Wire Wire Line
+	8450 3650 8600 3650
+Connection ~ 8450 3650
+Wire Wire Line
+	8450 3650 8450 3550
+Text Label 8600 3750 0    50   ~ 0
+THERMO_MOSI
+Wire Wire Line
+	8400 3750 8600 3750
+Connection ~ 8400 3750
+Wire Wire Line
+	8400 3750 8400 3650
+Text Label 4100 4300 0    50   ~ 0
+THERMO1_DRDY
+Text Label 4100 4400 0    50   ~ 0
+THERMO1_FAULT
+Text Label 4100 4500 0    50   ~ 0
+THERMO2_DRDY
+Text Label 4100 4600 0    50   ~ 0
+THERMO2_FAULT
+Wire Wire Line
+	4100 4600 4700 4600
+Wire Wire Line
+	4700 4500 4100 4500
+Wire Wire Line
+	4100 4400 4700 4400
+Wire Wire Line
+	4700 4300 4100 4300
 $EndSCHEMATC
