@@ -116,5 +116,7 @@
   (lib (name Varistor)(type KiCad)(uri ${KIPRJMOD}/kicad-footprints/Varistor.pretty)(options "")(descr ""))
   (lib (name PS12)(type KiCad)(uri ${KIPRJMOD}/PS12.pretty)(options "")(descr ""))
   (lib (name 1-1415899-3)(type Legacy)(uri ${KIPRJMOD}/1-1415899-3.mod)(options "")(descr ""))
-  (lib (name 1935161)(type Legacy)(uri ${KIPRJMOD}/1935161.mod)(options "")(descr ""))
+  (lib (name 1990025)(type KiCad)(uri ${KIPRJMOD}/1990025.pretty)(options "")(descr ""))
+  (lib (name 1935161)(type KiCad)(uri ${KIPRJMOD}/1935161.pretty)(options "")(descr ""))
+  (lib (name custom)(type KiCad)(uri ${KIPRJMOD}/custom.pretty)(options "")(descr ""))
 )

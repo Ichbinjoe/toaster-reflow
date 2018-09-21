@@ -62,33 +62,6 @@ F 4 "1276-1258-1-ND" H 4700 4000 50  0001 C CNN "DigikeyPartNumber"
 	1    4700 4000
 	1    0    0    -1  
 $EndComp
-$Comp
-L 1935161:1935161 J?
-U 1 1 5B8B9109
-P 4100 3950
-AR Path="/5B8B9109" Ref="J?"  Part="1" 
-AR Path="/5B8AB544/5B8B9109" Ref="J4"  Part="1" 
-AR Path="/5B8ADEE2/5B8B9109" Ref="J?"  Part="1" 
-AR Path="/5B8DE3E9/5B8B9109" Ref="J5"  Part="1" 
-F 0 "J5" H 4230 3996 50  0000 L CNN
-F 1 "1935161" H 4230 3905 50  0000 L CNN
-F 2 "1935161:PHOENIX_1935161" H 4100 3950 50  0001 L BNN
-F 3 "Phoenix Contact" H 4100 3950 50  0001 L BNN
-F 4 "None" H 4100 3950 50  0001 L BNN "Field4"
-F 5 "Conn Terminal Blocks 2 POS 5mm Solder ST Thru-Hole 16A" H 4100 3950 50  0001 L BNN "Field5"
-F 6 "None" H 4100 3950 50  0001 L BNN "Field6"
-F 7 "1935161" H 4100 3950 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 4100 3950 50  0001 L BNN "Field8"
-F 9 "277-1667-ND" H 4100 3950 50  0001 C CNN "DigikeyPartNumber"
-	1    4100 3950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4400 4050 4500 4050
-Wire Wire Line
-	4500 4050 4500 4150
-Wire Wire Line
-	4500 4150 4700 4150
 Wire Wire Line
 	4700 4150 5050 4150
 Wire Wire Line
@@ -218,21 +191,6 @@ Wire Wire Line
 	5900 4600 5800 4600
 Connection ~ 5800 4600
 $Comp
-L Device:C C4
-U 1 1 5B8C908D
-P 4700 4300
-AR Path="/5B8AB544/5B8C908D" Ref="C4"  Part="1" 
-AR Path="/5B8ADEE2/5B8C908D" Ref="C?"  Part="1" 
-AR Path="/5B8DE3E9/5B8C908D" Ref="C9"  Part="1" 
-F 0 "C9" H 4815 4346 50  0000 L CNN
-F 1 "0.01uF" H 4815 4255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4738 4150 50  0001 C CNN
-F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 4700 4300 50  0001 C CNN
-F 4 "478-1227-1-ND" H 4700 4300 50  0001 C CNN "DigikeyPartNumber"
-	1    4700 4300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0110
 U 1 1 5B8C91A5
 P 4700 4450
@@ -256,8 +214,8 @@ AR Path="/5B8DE3E9/5B8C91FE" Ref="C7"  Part="1"
 F 0 "C7" H 4815 3746 50  0000 L CNN
 F 1 "0.01uF" H 4815 3655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4738 3550 50  0001 C CNN
-F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 4700 3700 50  0001 C CNN
-F 4 "478-1227-1-ND" H 4700 3700 50  0001 C CNN "DigikeyPartNumber"
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2018/07/24/CL10B103KB8NCNC.pdf" H 4700 3700 50  0001 C CNN
+F 4 "1276-1921-1-ND" H 4700 3700 50  0001 C CNN "DigikeyPartNumber"
 	1    4700 3700
 	1    0    0    -1  
 $EndComp
@@ -276,109 +234,62 @@ F 3 "" H 4700 3550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Q_PMOS_GSD Q?
-U 1 1 5B8C9DFB
-P 7100 3750
-AR Path="/5B8C9DFB" Ref="Q?"  Part="1" 
-AR Path="/5B8AB544/5B8C9DFB" Ref="Q4"  Part="1" 
-AR Path="/5B8ADEE2/5B8C9DFB" Ref="Q?"  Part="1" 
-AR Path="/5B8DE3E9/5B8C9DFB" Ref="Q5"  Part="1" 
-F 0 "Q5" H 7306 3796 50  0000 L CNN
-F 1 "Q_PMOS_GSD" H 7306 3705 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7300 3850 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/NTR5105P-D.PDF" H 7100 3750 50  0001 C CNN
-F 4 "NTR5105PT1GOSCT-ND" H 7100 3750 50  0001 C CNN "DigikeyPartNumber"
-	1    7100 3750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR0112
 U 1 1 5B8CA2E0
-P 7200 3550
+P 7600 3650
 AR Path="/5B8AB544/5B8CA2E0" Ref="#PWR0112"  Part="1" 
 AR Path="/5B8ADEE2/5B8CA2E0" Ref="#PWR0121"  Part="1" 
 AR Path="/5B8DE3E9/5B8CA2E0" Ref="#PWR0121"  Part="1" 
-F 0 "#PWR0121" H 7200 3400 50  0001 C CNN
-F 1 "+3V3" H 7215 3723 50  0000 C CNN
-F 2 "" H 7200 3550 50  0001 C CNN
-F 3 "" H 7200 3550 50  0001 C CNN
-	1    7200 3550
+F 0 "#PWR0121" H 7600 3500 50  0001 C CNN
+F 1 "+3V3" H 7615 3823 50  0000 C CNN
+F 2 "" H 7600 3650 50  0001 C CNN
+F 3 "" H 7600 3650 50  0001 C CNN
+	1    7600 3650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 5B8CA624
-P 7500 4150
+P 7900 4250
 AR Path="/5B8CA624" Ref="D?"  Part="1" 
 AR Path="/5B8AB544/5B8CA624" Ref="D4"  Part="1" 
 AR Path="/5B8ADEE2/5B8CA624" Ref="D?"  Part="1" 
 AR Path="/5B8DE3E9/5B8CA624" Ref="D5"  Part="1" 
-F 0 "D5" H 7492 3895 50  0000 C CNN
-F 1 "RED" H 7492 3986 50  0000 C CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H 7500 4150 50  0001 C CNN
-F 3 "https://katalog.we-online.de/led/datasheet/150060RS75000.pdf" H 7500 4150 50  0001 C CNN
-F 4 "732-4978-1-ND" H 7500 4150 50  0001 C CNN "DigikeyPartNumber"
-	1    7500 4150
+F 0 "D5" H 7892 3995 50  0000 C CNN
+F 1 "RED" H 7892 4086 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 7900 4250 50  0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150060RS75000.pdf" H 7900 4250 50  0001 C CNN
+F 4 "732-4978-1-ND" H 7900 4250 50  0001 C CNN "DigikeyPartNumber"
+	1    7900 4250
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5B8CA62C
-P 7850 4150
-AR Path="/5B8CA62C" Ref="R?"  Part="1" 
-AR Path="/5B8AB544/5B8CA62C" Ref="R7"  Part="1" 
-AR Path="/5B8ADEE2/5B8CA62C" Ref="R?"  Part="1" 
-AR Path="/5B8DE3E9/5B8CA62C" Ref="R8"  Part="1" 
-F 0 "R8" V 8057 4150 50  0000 C CNN
-F 1 "470" V 7966 4150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7780 4150 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 7850 4150 50  0001 C CNN
-F 4 "P470HCT-ND" H 7850 4150 50  0001 C CNN "DigikeyPartNumber"
-	1    7850 4150
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	7650 4150 7700 4150
+	8050 4250 8100 4250
 Wire Wire Line
-	8000 4150 8050 4150
-Wire Wire Line
-	7350 4150 7200 4150
+	7750 4250 7600 4250
 $Comp
 L power:GND #PWR?
 U 1 1 5B8CA636
-P 8050 4100
+P 8100 4250
 AR Path="/5B8CA636" Ref="#PWR?"  Part="1" 
 AR Path="/5B8AB544/5B8CA636" Ref="#PWR0113"  Part="1" 
 AR Path="/5B8ADEE2/5B8CA636" Ref="#PWR0122"  Part="1" 
 AR Path="/5B8DE3E9/5B8CA636" Ref="#PWR0122"  Part="1" 
-F 0 "#PWR0122" H 8050 3850 50  0001 C CNN
-F 1 "GND" H 8055 3927 50  0000 C CNN
-F 2 "" H 8050 4100 50  0001 C CNN
-F 3 "" H 8050 4100 50  0001 C CNN
-	1    8050 4100
-	-1   0    0    1   
+F 0 "#PWR0122" H 8100 4000 50  0001 C CNN
+F 1 "GND" H 8105 4077 50  0000 C CNN
+F 2 "" H 8100 4250 50  0001 C CNN
+F 3 "" H 8100 4250 50  0001 C CNN
+	1    8100 4250
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8050 4150 8050 4100
-Wire Wire Line
-	7200 3950 7200 4150
+	7600 4050 7600 4250
 Text HLabel 6600 3650 2    50   Input ~ 0
 DRDY
 Wire Wire Line
 	6300 3650 6600 3650
 Text HLabel 6600 3750 2    50   Input ~ 0
 FAULT
-Wire Wire Line
-	6300 3750 6550 3750
-Wire Wire Line
-	6550 3750 6550 3800
-Wire Wire Line
-	6550 3800 6900 3800
-Wire Wire Line
-	6900 3800 6900 3750
-Connection ~ 6550 3750
-Wire Wire Line
-	6550 3750 6600 3750
 Text HLabel 6600 3950 2    50   Input ~ 0
 CS
 Text HLabel 6600 4050 2    50   Input ~ 0
@@ -395,4 +306,96 @@ Wire Wire Line
 	6300 4150 6600 4150
 Wire Wire Line
 	6300 4250 6600 4250
+$Comp
+L Device:R R6
+U 1 1 5BAD7E31
+P 4250 3850
+AR Path="/5B8AB544/5BAD7E31" Ref="R6"  Part="1" 
+AR Path="/5B8DE3E9/5BAD7E31" Ref="R9"  Part="1" 
+F 0 "R9" V 4043 3850 50  0000 C CNN
+F 1 "100" V 4134 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4180 3850 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 4250 3850 50  0001 C CNN
+F 4 "P100HCT-ND" H 4250 3850 50  0001 C CNN "DigikeyPartNumber"
+	1    4250 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 4150 4700 4150
+Wire Wire Line
+	3950 3850 4100 3850
+$Comp
+L Device:R R7
+U 1 1 5BADB677
+P 4250 4150
+AR Path="/5B8AB544/5BADB677" Ref="R7"  Part="1" 
+AR Path="/5B8DE3E9/5BADB677" Ref="R10"  Part="1" 
+F 0 "R10" V 4043 4150 50  0000 C CNN
+F 1 "100" V 4134 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4180 4150 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 4250 4150 50  0001 C CNN
+F 4 "P100HCT-ND" H 4250 4150 50  0001 C CNN "DigikeyPartNumber"
+	1    4250 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 3750 6450 3750
+$Comp
+L Device:Q_PNP_BEC Q3
+U 1 1 5BADF07C
+P 7500 3850
+AR Path="/5B8AB544/5BADF07C" Ref="Q3"  Part="1" 
+AR Path="/5B8DE3E9/5BADF07C" Ref="Q4"  Part="1" 
+F 0 "Q4" H 7691 3896 50  0000 L CNN
+F 1 "Q_PNP_BEC" H 7691 3805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SC-59" H 7700 3950 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Diodes%20PDFs/MMBT3906.pdf" H 7500 3850 50  0001 C CNN
+F 4 "MMBT3906-FDICT-ND" H 7500 3850 50  0001 C CNN "DigikeyPartNumber"
+	1    7500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5BAE219E
+P 7100 3850
+AR Path="/5B8AB544/5BAE219E" Ref="R8"  Part="1" 
+AR Path="/5B8DE3E9/5BAE219E" Ref="R11"  Part="1" 
+F 0 "R11" V 6893 3850 50  0000 C CNN
+F 1 "47k" V 6984 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7030 3850 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 7100 3850 50  0001 C CNN
+F 4 "P47.0KHCT-ND" H 7100 3850 50  0001 C CNN "DigikeyPartNumber"
+	1    7100 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7250 3850 7300 3850
+Wire Wire Line
+	6950 3850 6450 3850
+Wire Wire Line
+	6450 3850 6450 3750
+Connection ~ 6450 3750
+Wire Wire Line
+	6450 3750 6600 3750
+Text HLabel 3950 3850 0    50   Input ~ 0
+T+
+Text HLabel 3950 4150 0    50   Input ~ 0
+T-
+Wire Wire Line
+	3950 4150 4100 4150
+$Comp
+L Device:C C4
+U 1 1 5BB11D31
+P 4700 4300
+AR Path="/5B8AB544/5BB11D31" Ref="C4"  Part="1" 
+AR Path="/5B8ADEE2/5BB11D31" Ref="C?"  Part="1" 
+AR Path="/5B8DE3E9/5BB11D31" Ref="C9"  Part="1" 
+F 0 "C9" H 4815 4346 50  0000 L CNN
+F 1 "0.01uF" H 4815 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4738 4150 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2018/07/24/CL10B103KB8NCNC.pdf" H 4700 4300 50  0001 C CNN
+F 4 "1276-1921-1-ND" H 4700 4300 50  0001 C CNN "DigikeyPartNumber"
+	1    4700 4300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
