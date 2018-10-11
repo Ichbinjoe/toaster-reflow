@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -341,20 +341,6 @@ $EndComp
 Wire Wire Line
 	6300 3750 6450 3750
 $Comp
-L Device:Q_PNP_BEC Q3
-U 1 1 5BADF07C
-P 7500 3850
-AR Path="/5B8AB544/5BADF07C" Ref="Q3"  Part="1" 
-AR Path="/5B8DE3E9/5BADF07C" Ref="Q4"  Part="1" 
-F 0 "Q4" H 7691 3896 50  0000 L CNN
-F 1 "Q_PNP_BEC" H 7691 3805 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SC-59" H 7700 3950 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Diodes%20PDFs/MMBT3906.pdf" H 7500 3850 50  0001 C CNN
-F 4 "MMBT3906-FDICT-ND" H 7500 3850 50  0001 C CNN "DigikeyPartNumber"
-	1    7500 3850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R8
 U 1 1 5BAE219E
 P 7100 3850
@@ -397,5 +383,19 @@ F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldf
 F 4 "1276-1921-1-ND" H 4700 4300 50  0001 C CNN "DigikeyPartNumber"
 	1    4700 4300
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PNP_BEC Q3
+U 1 1 5BADF07C
+P 7500 3850
+AR Path="/5B8AB544/5BADF07C" Ref="Q3"  Part="1" 
+AR Path="/5B8DE3E9/5BADF07C" Ref="Q4"  Part="1" 
+F 0 "Q4" H 7691 3896 50  0000 L CNN
+F 1 "Q_PNP_BEC" H 7691 3805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SC-59" H 7700 3950 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Diodes%20PDFs/MMBT3906.pdf" H 7500 3850 50  0001 C CNN
+F 4 "MMBT3906-FDICT-ND" H 7500 3850 50  0001 C CNN "DigikeyPartNumber"
+	1    7500 3850
+	1    0    0    1   
 $EndComp
 $EndSCHEMATC
