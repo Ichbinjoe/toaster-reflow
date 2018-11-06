@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# 1-1415899-3:1-1415899-3
+# 1-1415899-3_1-1415899-3
 #
-DEF 1-1415899-3:1-1415899-3 K 0 40 Y N 1 L N
+DEF 1-1415899-3_1-1415899-3 K 0 40 Y N 1 L N
 F0 "K" -311 321 50 H V L BNN
-F1 "1-1415899-3:1-1415899-3" -310 -401 50 H V L BNN
+F1 "1-1415899-3_1-1415899-3" -310 -401 50 H V L BNN
 F2 "RELAY_1-1415899-3" 0 0 50 H I L BNN
 F3 "TE Connectivity" 0 0 50 H I L BNN
 F4 "Electromechanical Relay 5VDC 60Ohm 16A SPST-NO _29x12.7x15.7_mm THT Power Relay" 0 0 50 H I L BNN
@@ -45,11 +45,11 @@ X A1 A2 -500 200 200 R 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
-# 1935161:1935161
+# 1935161_1935161
 #
-DEF 1935161:1935161 J 0 40 Y Y 1 L N
+DEF 1935161_1935161 J 0 40 Y Y 1 L N
 F0 "J" -100 226 50 H V L BNN
-F1 "1935161:1935161" -100 -301 50 H V L BNN
+F1 "1935161_1935161" -100 -301 50 H V L BNN
 F2 "PHOENIX_1935161" 0 0 50 H I L BNN
 F3 "Phoenix Contact" 0 0 50 H I L BNN
 F4 "None" 0 0 50 H I L BNN
@@ -67,11 +67,55 @@ X 2 2 -300 -100 200 R 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
-# Connector:Raspberry_Pi_2_3
+# Connector_Generic_Conn_01x03
 #
-DEF Connector:Raspberry_Pi_2_3 J 0 40 Y Y 1 F N
+DEF Connector_Generic_Conn_01x03 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x03" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x04
+#
+DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x04" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Raspberry_Pi_2_3
+#
+DEF Connector_Raspberry_Pi_2_3 J 0 40 Y Y 1 F N
 F0 "J" -700 1250 50 H V L BNN
-F1 "Connector:Raspberry_Pi_2_3" 400 -1250 50 H V L TNN
+F1 "Connector_Raspberry_Pi_2_3" 400 -1250 50 H V L TNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -163,55 +207,11 @@ X GND 9 -300 -1300 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x03
+# Device_C
 #
-DEF Connector_Generic:Conn_01x03 J 0 40 Y N 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Generic:Conn_01x03" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 150 50 -150 1 1 10 f
-X Pin_1 1 -200 100 150 R 50 50 1 1 P
-X Pin_2 2 -200 0 150 R 50 50 1 1 P
-X Pin_3 3 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector_Generic:Conn_01x04
-#
-DEF Connector_Generic:Conn_01x04 J 0 40 Y N 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Generic:Conn_01x04" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -195 0 -205 1 1 6 N
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 150 50 -250 1 1 10 f
-X Pin_1 1 -200 100 150 R 50 50 1 1 P
-X Pin_2 2 -200 0 150 R 50 50 1 1 P
-X Pin_3 3 -200 -100 150 R 50 50 1 1 P
-X Pin_4 4 -200 -200 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device:C
-#
-DEF Device:C C 0 10 N Y 1 F N
+DEF Device_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:C" 25 -100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -225,11 +225,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:D
+# Device_D
 #
-DEF Device:D D 0 40 N N 1 F N
+DEF Device_D D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:D" 0 -100 50 H V C CNN
+F1 "Device_D" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -247,11 +247,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:LED
+# Device_LED
 #
-DEF Device:LED D 0 40 N N 1 F N
+DEF Device_LED D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:LED" 0 -100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -270,11 +270,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Q_NMOS_GSD
+# Device_Q_NMOS_GSD
 #
-DEF Device:Q_NMOS_GSD Q 0 0 Y N 1 F N
+DEF Device_Q_NMOS_GSD Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Device:Q_NMOS_GSD" 200 -50 50 H V L CNN
+F1 "Device_Q_NMOS_GSD" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -302,11 +302,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Q_PNP_BEC
+# Device_Q_PNP_BEC
 #
-DEF Device:Q_PNP_BEC Q 0 0 Y N 1 F N
+DEF Device_Q_PNP_BEC Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Device:Q_PNP_BEC" 200 -50 50 H V L CNN
+F1 "Device_Q_PNP_BEC" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -321,11 +321,11 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# Device_R
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -338,11 +338,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Speaker
+# Device_Speaker
 #
-DEF Device:Speaker LS 0 0 Y N 1 F N
+DEF Device_Speaker LS 0 0 Y N 1 F N
 F0 "LS" 50 225 50 H V R CNN
-F1 "Device:Speaker" 50 150 50 H V R CNN
+F1 "Device_Speaker" 50 150 50 H V R CNN
 F2 "" 0 -200 50 H I C CNN
 F3 "" -10 -50 50 H I C CNN
 DRAW
@@ -353,11 +353,11 @@ X 2 2 -200 -100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Reference_Voltage:ISL21070CIH320Z-TK
+# Reference_Voltage_ISL21070CIH320Z-TK
 #
-DEF Reference_Voltage:ISL21070CIH320Z-TK U 0 20 Y Y 1 F N
+DEF Reference_Voltage_ISL21070CIH320Z-TK U 0 20 Y Y 1 F N
 F0 "U" -25 325 50 H V C CNN
-F1 "Reference_Voltage:ISL21070CIH320Z-TK" -75 250 50 H V L CNN
+F1 "Reference_Voltage_ISL21070CIH320Z-TK" -75 250 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23" 500 -250 50 H I C CIN
 F3 "" 0 0 50 H I C CIN
 ALIAS ISL21070CIH320Z-TK ISL21070CIH325Z-TK
@@ -372,11 +372,11 @@ X GND 3 -100 -300 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Sensor_Temperature:MAX31856
+# Sensor_Temperature_MAX31856
 #
-DEF Sensor_Temperature:MAX31856 U 0 20 Y Y 1 F N
+DEF Sensor_Temperature_MAX31856 U 0 20 Y Y 1 F N
 F0 "U" -300 550 50 H V R CNN
-F1 "Sensor_Temperature:MAX31856" 550 550 50 H V R CNN
+F1 "Sensor_Temperature_MAX31856" 550 550 50 H V R CNN
 F2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" 150 -550 50 H I L CNN
 F3 "" -50 200 50 H I C CNN
 $FPLIST
@@ -411,11 +411,11 @@ X ~CS 9 500 0 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# power:+3.3VADC
+# power_+3.3VADC
 #
-DEF power:+3.3VADC #PWR 0 0 Y Y 1 F P
+DEF power_+3.3VADC #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 150 -50 50 H I C CNN
-F1 "power:+3.3VADC" 0 100 50 H V C CNN
+F1 "power_+3.3VADC" 0 100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -425,11 +425,11 @@ X +3.3VADC 1 0 0 0 U 50 50 0 0 W N
 ENDDRAW
 ENDDEF
 #
-# power:+3V3
+# power_+3V3
 #
-DEF power:+3V3 #PWR 0 0 Y Y 1 F P
+DEF power_+3V3 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+3V3" 0 140 50 H V C CNN
+F1 "power_+3V3" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
@@ -441,11 +441,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:+5V
+# power_+5V
 #
-DEF power:+5V #PWR 0 0 Y Y 1 F P
+DEF power_+5V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+5V" 0 140 50 H V C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -456,11 +456,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_GND
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

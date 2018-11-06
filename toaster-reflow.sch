@@ -122,8 +122,6 @@ F 9 "Compliant" H 2150 5750 50  0001 L BNN "Field10"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1550 5650 1650 5650
-Wire Wire Line
 	1550 5850 1650 5850
 $Comp
 L Device:LED D3
@@ -206,18 +204,18 @@ Wire Wire Line
 $Comp
 L 1935161:1935161 J1
 U 1 1 5B8AC1A4
-P 1250 5750
-F 0 "J1" H 1145 5383 50  0000 C CNN
-F 1 "1935161" H 1145 5474 50  0000 C CNN
-F 2 "1935161:PHOENIX_1935161" H 1250 5750 50  0001 L BNN
-F 3 "Phoenix Contact" H 1250 5750 50  0001 L BNN
-F 4 "277-1667-ND" H 1250 5750 50  0001 C CNN "DigikeyPartNumber"
-F 5 "None" H 1250 5750 50  0001 L BNN "Field4"
-F 6 "Conn Terminal Blocks 2 POS 5mm Solder ST Thru-Hole 16A" H 1250 5750 50  0001 L BNN "Field5"
-F 7 "None" H 1250 5750 50  0001 L BNN "Field6"
-F 8 "1935161" H 1250 5750 50  0001 L BNN "Field7"
-F 9 "Unavailable" H 1250 5750 50  0001 L BNN "Field8"
-	1    1250 5750
+P 1100 5550
+F 0 "J1" H 995 5183 50  0000 C CNN
+F 1 "1935161" H 995 5274 50  0000 C CNN
+F 2 "1935161:PHOENIX_1935161" H 1100 5550 50  0001 L BNN
+F 3 "Phoenix Contact" H 1100 5550 50  0001 L BNN
+F 4 "277-1667-ND" H 1100 5550 50  0001 C CNN "DigikeyPartNumber"
+F 5 "None" H 1100 5550 50  0001 L BNN "Field4"
+F 6 "Conn Terminal Blocks 2 POS 5mm Solder ST Thru-Hole 16A" H 1100 5550 50  0001 L BNN "Field5"
+F 7 "None" H 1100 5550 50  0001 L BNN "Field6"
+F 8 "1935161" H 1100 5550 50  0001 L BNN "Field7"
+F 9 "Unavailable" H 1100 5550 50  0001 L BNN "Field8"
+	1    1100 5550
 	-1   0    0    -1  
 $EndComp
 Text Label 4200 3500 0    50   ~ 0
@@ -653,8 +651,8 @@ Wire Wire Line
 Wire Wire Line
 	4700 4300 4100 4300
 Wire Wire Line
-	7500 2200 8000 2200
-Text Label 7500 2200 0    50   ~ 0
+	7050 2200 7550 2200
+Text Label 7050 2200 0    50   ~ 0
 SERVO_PWM
 $Comp
 L Device:Q_NMOS_GSD Q2
@@ -820,4 +818,36 @@ Wire Wire Line
 	8200 3900 8050 3900
 Text Notes 4900 6700 0    50   ~ 0
 Buzzer
+Wire Wire Line
+	1400 5650 1650 5650
+Wire Wire Line
+	1400 5450 1550 5450
+Wire Wire Line
+	1550 5450 1550 5850
+$Comp
+L Device:R R?
+U 1 1 5BE2B437
+P 7700 2200
+F 0 "R?" H 7770 2246 50  0000 L CNN
+F 1 "1K" H 7770 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7630 2200 50  0001 C CNN
+F 3 "https://www.rohm.com/datasheet/ESR01MZPF/esr-e" H 7700 2200 50  0001 C CNN
+F 4 "RHM1.0KDCT-ND" H 7700 2200 50  0001 C CNN "DigikeyPartNumber"
+	1    7700 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8000 2200 7850 2200
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5BE3EC4D
+P 5300 6250
+F 0 "#PWR?" H 5300 6100 50  0001 C CNN
+F 1 "+3V3" H 5315 6423 50  0000 C CNN
+F 2 "" H 5300 6250 50  0001 C CNN
+F 3 "" H 5300 6250 50  0001 C CNN
+	1    5300 6250
+	1    0    0    -1  
+$EndComp
+Connection ~ 5300 6250
 $EndSCHEMATC
